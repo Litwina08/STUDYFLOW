@@ -2,7 +2,7 @@ const taskInput =
     document.getElementById("taskInput");
 
 const addButton =
-    document.getElementById("addButton");
+    document.getElementById("addButtonj
 
 const taskList =
     document.getElementById("taskList");
@@ -63,7 +63,6 @@ function saveTasks() {
 function displayTasks() {
 
     taskList.innerHTML = "";
-
 
     tasks.forEach(function(task, index) {
 
@@ -690,3 +689,7 @@ displayTasks();
 displaySubjects();
 
 updateTimerDisplay();
+
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("../service-worker.js");
+}
