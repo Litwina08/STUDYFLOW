@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudyFlow</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="brand">
+            <div class="logo">StudyFlow</div>
+            <p>Your personal study space</p>
+        </div>
+
+        <button id="themeButton">
+            Dark Mode
+        </button>
+
+    </header>
+
+
+    <!-- WELCOME -->
+    <section class="welcome">
+
+        <div>
+            <span>WELCOME BACK</span>
+
+            <h1>Ready to study?</h1>
+
+            <p>
+                Organize your subjects, manage your tasks
+                and keep making progress.
+            </p>
+        </div>
+
+        <div class="welcome-icon">
+            STUDY
+        </div>
+
+    </section>
+
+
+    <!-- STATS -->
+    <section class="stats">
+
+        <div class="stat-card">
+            <div class="stat-icon">T</div>
+
+            <div>
+                <p>Total Tasks</p>
+                <h2 id="totalTasks">0</h2>
+            </div>
+        </div>
+
+
+        <div class="stat-card">
+            <div class="stat-icon">✓</div>
+
+            <div>
+                <p>Completed</p>
+                <h2 id="completedTasks">0</h2>
+            </div>
+        </div>
+
+
+        <div class="stat-card">
+            <div class="stat-icon">%</div>
+
+            <div>
+                <p>Progress</p>
+                <h2 id="progress">0%</h2>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- MAIN GRID -->
+    <div class="main-grid">
+
+        <!-- TASK CARD -->
+        <section class="card">
+
+            <div class="card-title">
+
+                <div>
+                    <span>YOUR PLAN</span>
+                    <h2>Today's Tasks</h2>
+                </div>
+
+                <div class="task-count" id="taskCount">
+                    0 tasks
+                </div>
+
+            </div>
+
+
+            <div class="task-input">
+
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="What do you need to study?"
+                >
+
+                <button id="addButton">
+                    Add Task
+                </button>
+
+            </div>
+
+
+            <ul id="taskList"></ul>
+
+        </section>
+
+
+        <!-- PROGRESS CARD -->
+        <section class="card progress-card">
+
+            <div class="card-title">
+
+                <div>
+                    <span>OVERVIEW</span>
+                    <h2>Today's Progress</h2>
+                </div>
+
+            </div>
+
+
+            <div class="progress-circle">
+
+                <div id="circleText">
+                    0%
+                </div>
+
+            </div>
+
+
+            <p id="message">
+                Let's get started!
+            </p>
+
+        </section>
+
+    </div>
+
+
+    <!-- STUDY TIMER -->
+    <section class="card timer-card">
+
+        <div class="card-title">
+
+            <div>
+                <span>FOCUS TIME</span>
+                <h2>Study Timer</h2>
+            </div>
+
+            <div class="timer-mode" id="timerMode">
+                Study Session
+            </div>
+
+        </div>
+
+
+        <div class="timer-display" id="timerDisplay">
+            25:00
+        </div>
+
+
+        <p class="timer-info" id="timerInfo">
+            Focus for 25 minutes
+        </p>
+
+
+        <div class="timer-buttons">
+
+            <button id="startTimer">
+                Start
+            </button>
+
+            <button id="pauseTimer">
+                Pause
+            </button>
+
+            <button id="resetTimer">
+                Reset
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- SUBJECTS -->
+    <section class="card subjects-card">
+
+        <div class="card-title">
+
+            <div>
+                <span>YOUR STUDY AREAS</span>
+                <h2>My Subjects</h2>
+            </div>
+
+            <div class="subject-count" id="subjectCount">
+                0 subjects
+            </div>
+
+        </div>
+
+
+        <div class="subject-input">
+
+            <input
+                type="text"
+                id="subjectInput"
+                placeholder="Enter a subject..."
+            >
+
+            <button id="addSubjectButton">
+                Add Subject
+            </button>
+
+        </div>
+
+
+        <div
+            class="subjects"
+            id="subjectList"
+        ></div>
+
+    </section>
+
+
+    <footer>
+        Study smart. Stay consistent. Keep growing.
+    </footer>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
