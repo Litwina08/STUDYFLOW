@@ -689,7 +689,3 @@ displayTasks();
 displaySubjects();
 
 updateTimerDisplay();
-
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("../service-worker.js");
-}
